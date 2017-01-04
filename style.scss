@@ -6,3 +6,9 @@ $color-link: $color-brand;
 $link-underline: false;
 
 @import 'node_modules/hocus-pocus/hocus-pocus';
+
+.video {
+  max-width: 100%;
+  margin-bottom: $spacing-unit;
+  border: 1px solid $color-ui;
+}
