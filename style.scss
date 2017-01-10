@@ -7,8 +7,14 @@ $link-underline: false;
 
 @import 'node_modules/hocus-pocus/hocus-pocus';
 
+.wrapper {
+  padding: 10vh;
+}
+
 .video {
-  max-width: 100%;
+  max-height: 80vh;
   margin-bottom: $spacing-unit;
-  border: 1px solid $color-ui;
+  border: 1px solid rgba($color-ui, .5);
+  box-shadow: 0 -20px 0 0 rgba($color-ui, .5);
+  border-radius: $ui-border-radius;
 }

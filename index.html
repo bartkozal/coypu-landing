@@ -10,30 +10,48 @@
     <meta property="og:image" content="http://coypu.co/img/brand.png">
 
     <title>Text-editor-like week planner - Coypu</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="//cdn.rawgit.com/resir014/Clear-Sans-Webfont/v1.0.1/css/clear-sans.css">
+    <link rel="stylesheet" href="//cdn.rawgit.com/resir014/Clear-Sans-Webfont/v1.0.1/css/clear-sans.css">
+    <link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="container padding-2/1-top">
-      <p class="text-center margin-2/1-bottom">
-        <img src="img/brand.png" srcset="img/brand@2x.png 2x" alt="Coypu Logo">
-      </p>
+    <div class="wrapper">
+      <div class="grid text-center">
+        <div class="grid-item 1/2 compact-1/1">
+          <p class="text-center">
+            <img src="img/brand.png" srcset="img/brand@2x.png 2x" alt="Coypu Logo">
+          </p>
 
-      <p>
-        Text-editor-like week planner. Launching in January 2017.
-      </p>
+          <p>
+            Text-editor-like week planner
+          </p>
 
-      <p>
-        Follow <a href="//twitter.com/_bkzl">@_bkzl</a> and <a href="//twitter.com/_mac">@_mac</a> for updates.
-      </p>
+          <p class="margin-1/2-bottom">
+            <a href="//download.coypu.co/download/osx" class="btn btn-brand">
+              <i class="icon ion-social-apple margin-1/4-right"></i>
+              Download for macOS
+            </a>
+          </p>
 
-      <video autoplay="autoplay" loop="loop"src="/img/demo.mp4" class="video"></video>
+          <p class="text-muted text-small">
+            Windows, Linux, iOS and Android versions in development!
+          </p>
 
-      <p>
-        <a href="//lostbananas.com" class="text-small text-muted">
-          &copy; <script>document.write(new Date().getFullYear());</script> Bartłomiej Kozal &amp; Maciej Kozal
-        </a>
-      </p>
+          <p>
+            Follow <a href="//twitter.com/_bkzl">@_bkzl</a> and <a href="//twitter.com/_mac">@_mac</a> for updates.
+          </p>
+
+          <p>
+            <a href="//lostbananas.com" class="text-small text-muted">
+              &copy; <script>document.write(new Date().getFullYear());</script> Bartłomiej Kozal &amp; Maciej Kozal
+            </a>
+          </p>
+        </div>
+
+        <div class="grid-item 1/2 compact-1/1">
+           <video autoplay="autoplay" loop="loop" src="/img/demo.mp4" poster="/img/poster.png" class="video"></video>
+        </div>
+      </div>
     </div>
 
     <script>
