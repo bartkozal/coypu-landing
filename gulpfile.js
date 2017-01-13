@@ -5,7 +5,8 @@ var gulp      = require('gulp'),
     file      = require('gulp-file'),
     sass      = require('gulp-sass'),
     ghPages   = require('gulp-gh-pages'),
-    util      = require('gulp-util');
+    util      = require('gulp-util'),
+    opn       = require('opn');
 
 var domain = "coypu.co";
 var remoteUrl = "git@github.com:bkzl/coypu-landing.git"
@@ -78,6 +79,10 @@ gulp.task('deploy', function() {
     }));
 });
 
-gulp.task('serve', sequence('clean', 'build', ['watch', 'connect']));
+gulp.task('browse', function () {
+  opn('http://localhost:8080', { app: 'google chrome' });
+});
+
+gulp.task('serve', sequence('clean', 'build', ['watch', 'connect'], 'browse'));
 gulp.task('publish', sequence('clean', 'build', 'deploy'));
 gulp.task('default', ['serve']);
