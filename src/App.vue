@@ -17,6 +17,7 @@ $grid-container: 414px;
 $color-brand: #ea7362;
 $color-link: $color-brand;
 $link-underline: false;
+$font-weight-headings: 400;
 
 @import 'node_modules/hocus-pocus/hocus-pocus';
 

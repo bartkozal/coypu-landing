@@ -38,7 +38,7 @@
           <router-link to="/help" class="text-muted">Help</router-link>
         </li>
         <li>
-          <router-link to="/changelog" class="text-muted">Changelog</router-link>
+          <router-link to="/changelog" class="text-muted">Release notes</router-link>
         </li>
       </ul>
     </div>
@@ -50,12 +50,12 @@
 </template>
 
 <script>
-  export default {
-    name: 'home',
-    computed: {
-      currentYear () {
-        return new Date().getFullYear()
-      }
+export default {
+  name: 'home',
+  computed: {
+    currentYear () {
+      return new Date().getFullYear()
     }
   }
+}
 </script>
