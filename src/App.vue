@@ -33,7 +33,7 @@
       </div>
 
       <div class="grid-item 1/2 compact-1/1">
-          <video autoplay="autoplay" loop="loop" src="./static/demo.mp4" poster="./assets/poster.png" class="video"></video>
+          <video autoplay="autoplay" loop="loop" src="./static/demo.mp4" poster="./static/poster.png" class="video"></video>
       </div>
     </div>
   </div>
