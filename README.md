@@ -1,19 +1,16 @@
-# Coypu
+# coypu-landing
 
-Coypu landing page
+> Coypu landing page
 
-## Development
+## Build Setup
 
-Install dependencies:
+``` bash
+# install dependencies
+npm install
 
-`$ npm install`
+# serve with hot reload at localhost:8080
+npm run dev
 
-Run:
-
-`$ gulp serve`
-
-## Deployment
-
-Run:
-
-`$ gulp publish`
+# deploy to production
+npm run deploy
+```
