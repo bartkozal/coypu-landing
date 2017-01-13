@@ -60,6 +60,11 @@ $link-underline: false;
 
 @import 'node_modules/hocus-pocus/hocus-pocus';
 
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 .wrapper {
   padding: 8vh;
 }
