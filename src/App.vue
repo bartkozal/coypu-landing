@@ -27,13 +27,14 @@ body {
 }
 
 .wrapper {
-  padding: 8vh;
+  padding: 5vh 5vw;
 }
 
 .video {
-  max-height: 80vh;
+  max-height: 85vh;
   border: 1px solid rgba($color-ui, .5);
-  box-shadow: 0 -20px 0 0 rgba($color-ui, .5);
+  margin-top: 3vh;
+  box-shadow: 0 -2vh 0 0 rgba($color-ui, .5);
   border-radius: $ui-border-radius;
 }
 </style>

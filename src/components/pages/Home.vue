@@ -1,8 +1,8 @@
 <template>
   <div class="grid text-center">
-    <div class="grid-item 1/2 compact-1/1">
-      <p class="text-center">
-        <img src="../assets/brand.png" srcset="../assets/brand@2x.png 2x" alt="Coypu Logo">
+    <div class="grid-item 1/2 compact-1/1 compact-margin-bottom">
+      <p class="text-center margin-2/1-top">
+        <img src="../../assets/brand.png" srcset="../../assets/brand@2x.png 2x" alt="Coypu Logo">
       </p>
 
       <p>
@@ -22,7 +22,7 @@
         </router-link>
       </p>
 
-      <p>Read our <router-link to="/help">manual</router-link> to learn more.</p>
+      <p>Read our <router-link to="/faq">FAQ</router-link> to learn more.</p>
 
       <p class="margin-2/1-bottom">
         Follow <a href="//twitter.com/_bkzl">@_bkzl</a> and <a href="//twitter.com/_mac">@_mac</a> for updates.
@@ -35,7 +35,7 @@
           </a>
         </li>
         <li>
-          <router-link to="/help" class="text-muted">Help</router-link>
+          <router-link to="/faq" class="text-muted">FAQ</router-link>
         </li>
         <li>
           <router-link to="/changelog" class="text-muted">Release notes</router-link>

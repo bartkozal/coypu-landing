@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import Navbar from './navbar'
+import Navbar from '../navbar'
 
 export default {
   name: 'changelog',
