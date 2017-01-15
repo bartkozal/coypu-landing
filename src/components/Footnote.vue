@@ -1,5 +1,5 @@
 <template>
-  <div class="text-small margin-2/1-top">
+  <div class="text-small margin-2/1-top text-center">
     <ul class="list-divided margin-1/4-bottom">
       <li>
         <router-link to="/" class="text-muted">Home</router-link>
