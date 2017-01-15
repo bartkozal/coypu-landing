@@ -29,7 +29,7 @@ export default {
         {
           version: 'v1.0.1',
           date: 'Jan 15th, 2017',
-          body: `- Make <strong>Enter</strong> and <strong>Backspace</strong>]
+          body: `- Make <strong>Enter</strong> and <strong>Backspace</strong>
             keys depend on caret position (so, it's possible now to split, join
             or insert new task above existing)<br>
           - Allow to deselect tasks with <strong>Esc</strong><br>
