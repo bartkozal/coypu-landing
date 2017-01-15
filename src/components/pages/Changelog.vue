@@ -3,7 +3,11 @@
     <navbar title="Release notes"></navbar>
     <div v-for="release in releases">
       <div class="grid grid-bottom grid-pair">
-        <div class="grid-item 1/2 text-brand">{{ release.version }}</div>
+        <div class="grid-item 1/2">
+          <a href="//download.coypu.co/download">
+            {{ release.version }}
+          </a>
+        </div>
         <div class="grid-item 1/2 text-small text-muted">{{ release.date }}</div>
       </div>
       <hr class="margin-1/4-top margin-1/2-bottom">
