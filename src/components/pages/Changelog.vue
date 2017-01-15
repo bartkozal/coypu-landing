@@ -9,15 +9,19 @@
       <hr class="margin-1/4-top margin-1/2-bottom">
       <p v-html="release.body"></p>
     </div>
+    <footnote></footnote>
+  </div>
 </template>
 
 <script>
 import Navbar from '../navbar'
+import Footnote from '../footnote'
 
 export default {
   name: 'changelog',
   components: {
-    Navbar
+    Navbar,
+    Footnote
   },
   data () {
     return {

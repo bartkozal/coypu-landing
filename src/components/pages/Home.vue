@@ -18,29 +18,17 @@
 
       <p class="text-small">
         <router-link to="/changelog" class="text-muted">
-          v1.0.0
+          {{ currentVersion }}
         </router-link>
       </p>
 
       <p>Read our <router-link to="/faq">FAQ</router-link> to learn more.</p>
 
-      <p class="margin-2/1-bottom">
+      <p>
         Follow <a href="//twitter.com/_bkzl">@_bkzl</a> and <a href="//twitter.com/_mac">@_mac</a> for updates.
       </p>
 
-      <ul class="list-divided text-small">
-        <li>
-          <a href="//lostbananas.com" class="text-muted">
-            &copy; {{ currentYear }} Bartłomiej Kozal &amp; Maciej Kozal
-          </a>
-        </li>
-        <li>
-          <router-link to="/faq" class="text-muted">FAQ</router-link>
-        </li>
-        <li>
-          <router-link to="/changelog" class="text-muted">Release notes</router-link>
-        </li>
-      </ul>
+      <footnote></footnote>
     </div>
 
     <div class="grid-item 1/2 compact-1/1">
@@ -50,12 +38,17 @@
 </template>
 
 <script>
+import Footnote from '../footnote'
+
 export default {
   name: 'home',
-  computed: {
-    currentYear () {
-      return new Date().getFullYear()
+  data () {
+    return {
+      currentVersion: 'v1.0.1'
     }
+  },
+  components: {
+    Footnote
   }
 }
 </script>

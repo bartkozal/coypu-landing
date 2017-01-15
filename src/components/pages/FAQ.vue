@@ -5,16 +5,19 @@
       <p class="margin-1/4-bottom text-bold">{{ topic.question }}</p>
       <p v-html="topic.answer"></p>
     </div>
+    <footnote></footnote>
   </div>
 </template>
 
 <script>
 import Navbar from '../navbar'
+import Footnote from '../footnote'
 
 export default {
   name: 'faq',
   components: {
-    Navbar
+    Navbar,
+    Footnote
   },
   data () {
     return {
