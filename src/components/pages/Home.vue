@@ -2,7 +2,7 @@
   <div class="grid text-center">
     <div class="grid-item 1/2 compact-1/1 compact-margin-bottom">
       <p class="text-center margin-2/1-top">
-        <img src="../../assets/brand.png" srcset="../../assets/brand@2x.png 2x" alt="Coypu Logo">
+        <img src="/static/brand.png" srcset="/static/brand@2x.png 2x" alt="Coypu Logo">
       </p>
 
       <p>
@@ -32,7 +32,7 @@
     </div>
 
     <div class="grid-item 1/2 compact-1/1">
-      <video autoplay="autoplay" loop="loop" src="./static/demo.mp4" poster="./static/poster.png" class="video"></video>
+      <video autoplay="autoplay" loop="loop" src="/static/demo.mp4" poster="/static/poster.png" class="video"></video>
     </div>
   </div>
 </template>
