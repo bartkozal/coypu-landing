@@ -44,7 +44,7 @@ export default {
   name: 'home',
   data () {
     return {
-      currentVersion: 'v1.0.1'
+      currentVersion: 'v1.0.2'
     }
   },
   components: {

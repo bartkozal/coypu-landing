@@ -31,13 +31,18 @@ export default {
     return {
       releases: [
         {
+          version: 'v1.0.2',
+          date: 'Jan 16th, 2017',
+          body: `- Fix rendering issues during very fast typing`
+        },
+        {
           version: 'v1.0.1',
           date: 'Jan 15th, 2017',
           body: `- Make <strong>Enter</strong> and <strong>Backspace</strong>
-            keys depend on caret position (so, it's possible now to split, join
-            or insert new task above existing)<br>
+            keys sensitive to the caret position (so, it's possible to split
+            and join tasks)<br>
           - Allow to deselect tasks with <strong>Esc</strong><br>
-          - Remember application window position and size between runs<br>
+          - Remember window position and size<br>
           - All labels (week number, week range and day) are now clickable<br>
           - Highlight current day<br>
           - Improve performance<br>
