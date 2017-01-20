@@ -23,9 +23,9 @@
           </a>
         </li>
         <li>
-          <a href="//download.coypu.co/download/linux" class="btn btn-brand">
+          <a href="//download.coypu.co/download/linux_deb" class="btn btn-brand">
             <i class="icon ion-social-tux margin-1/4-right"></i>
-            Download for Linux
+            Download for Linux (.deb)
           </a>
         </li>
       </ul>
