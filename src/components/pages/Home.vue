@@ -9,17 +9,33 @@
         Text-editor-like week planner
       </p>
 
-      <p class="margin-1/2-bottom">
-        <a href="//download.coypu.co/download/osx" class="btn btn-brand">
-          <i class="icon ion-social-apple margin-1/4-right"></i>
-          Download for macOS
-        </a>
-      </p>
+      <ul class="list-reset margin-1/2-bottom">
+        <li>
+          <a href="//download.coypu.co/download/mac" class="btn btn-brand">
+            <i class="icon ion-social-apple margin-1/4-right"></i>
+            Download for macOS
+          </a>
+        </li>
+        <li class="margin-1/4-vertical">
+          <a href="//download.coypu.co/download/win" class="btn btn-brand">
+            <i class="icon ion-social-windows margin-1/4-right"></i>
+            Download for Windows
+          </a>
+        </li>
+        <li>
+          <a href="//download.coypu.co/download/linux" class="btn btn-brand">
+            <i class="icon ion-social-tux margin-1/4-right"></i>
+            Download for Linux
+          </a>
+        </li>
+      </ul>
 
-      <p class="text-small">
+      <p class="text-small text-muted">
         <router-link to="/changelog" class="text-muted">
-          {{ currentVersion }}
+          x64, v{{ currentVersion }}
         </router-link>
+        <br>
+        Note: Linux version doesn't auto update
       </p>
 
       <p>Read our <router-link to="/faq">FAQ</router-link> to learn more.</p>
@@ -44,7 +60,7 @@ export default {
   name: 'home',
   data () {
     return {
-      currentVersion: 'v1.0.2'
+      currentVersion: '1.1.0'
     }
   },
   components: {

@@ -46,9 +46,8 @@ export default {
           answer: `Yes it does.`
         },
         {
-          question: 'Do you plan to support other platforms?',
-          answer: `Yes. We will support all major platforms: macOS (with
-            Mac App Store version), Windows, Linux, iOS and Android`
+          question: 'Do you plan to release mobile apps?',
+          answer: `Yes. We will release both iOS and Android versions.`
         },
         {
           question: 'How can I request a feature or report a bug?',
@@ -60,7 +59,7 @@ export default {
         {
           question: 'What is your roadmap?',
           answer: `Fix editing imperfections (i.e. multiline selection),
-            release on all platforms, support all calendar formats
+            release mobile apps, support all calendar formats
             and languages, notes for tasks, hour-specific and repeatable entries.
             We aim for <a href="https://twitter.com/_mac/status/819966993369595905">this design</a>.`
         },

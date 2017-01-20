@@ -31,6 +31,12 @@ export default {
     return {
       releases: [
         {
+          version: 'v1.1.0',
+          date: 'Jan 20th, 2017',
+          body: `- Release Windows and Linux versions<br>
+          - Update app icon`
+        },
+        {
           version: 'v1.0.2',
           date: 'Jan 16th, 2017',
           body: `- Fix rendering issues during very fast typing`
