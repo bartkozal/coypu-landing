@@ -54,7 +54,7 @@ export default {
           answer: `The easiest way is to ask us on Twitter
             (<a href="https://twitter.com/@_bkzl">@_bkzl</a> or
             <a href="https://twitter.com/@_mac">@_mac</a>).
-            You can also <a href="mailto:bkzl@me.com">send us an email</a>.`
+            You can also <a href="mailto:hello@lostbananas.com">send us an email</a>.`
         },
         {
           question: 'What is your roadmap?',
