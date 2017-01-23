@@ -24,10 +24,10 @@ export default {
       faq: [
         {
           question: 'How does it work?',
-          answer: `The idea behind Coypu is to make a week planer with
+          answer: `The idea behind Coypu is to make a week planner with
             the text-editor-like interface to input data. It means you can f.e.
             add new tasks using enter, jump between todos with arrow keys,
-            use backspace to remove exisiting entries or complete tasks with
+            use backspace to remove existing entries or complete tasks with
             the tab key.`
         },
         {
@@ -39,7 +39,7 @@ export default {
           question: 'Is it free?',
           answer: `Yes it is. In the future, we plan to add synchronization between clients
             (i.e. macOS <-> Android) and this will cost a small fee
-            to cover servers and maintanance costs.`
+            to cover servers and maintenance costs.`
         },
         {
           question: 'Does it work offline?',
