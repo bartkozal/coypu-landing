@@ -15,7 +15,6 @@
   "dependencies": {
     "hocus-pocus": "^0.3.3",
     "vue": "^2.1.0",
-    "vue-analytics": "^1.3.3",
     "vue-router": "^2.1.1"
   },
   "devDependencies": {
