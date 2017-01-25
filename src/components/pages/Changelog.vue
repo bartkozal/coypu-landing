@@ -33,7 +33,7 @@ export default {
         {
           version: 'v1.1.0',
           date: 'Jan 20th, 2017',
-          body: `- Release Windows and Linux versions<br>
+          body: `- Release <strong>Windows</strong> and <strong>Linux</strong> versions<br>
           - Update app icon`
         },
         {
@@ -44,10 +44,10 @@ export default {
         {
           version: 'v1.0.1',
           date: 'Jan 15th, 2017',
-          body: `- Make <strong>Enter</strong> and <strong>Backspace</strong>
+          body: `- Make <code>Enter</code> and <code>Backspace</code>
             keys sensitive to the caret position (so, it's possible to split
             and join tasks)<br>
-          - Allow to deselect tasks with <strong>Esc</strong><br>
+          - Allow deselecting tasks with <code>Esc</code><br>
           - Remember window position and size<br>
           - All labels (week number, week range and day) are now clickable<br>
           - Highlight current day<br>
