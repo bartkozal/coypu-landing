@@ -24,7 +24,7 @@ export default {
       faq: [
         {
           question: 'How does it work?',
-          answer: `The idea behind Coypu is to make a week planner with
+          answer: `The idea behind Coypu is to make a weekly planner with
             the text-editor-like interface to input data. It means you can f.e.
             add new tasks using enter, jump between todos with arrow keys,
             use backspace to remove existing entries or complete tasks with

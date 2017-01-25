@@ -6,7 +6,7 @@
       </p>
 
       <p>
-        Text-editor-like week planner
+        Text-editor-like weekly planner
       </p>
 
       <ul class="list-reset margin-1/2-bottom">
