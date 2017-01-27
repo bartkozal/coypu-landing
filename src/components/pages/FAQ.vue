@@ -37,9 +37,9 @@ export default {
         },
         {
           question: 'Is it free?',
-          answer: `Yes it is. In the future, we plan to add synchronization between clients
-            (i.e. macOS <-> Android) and this will cost a small fee
-            to cover servers and maintenance costs.`
+          answer: `Yes it is. In the future, we plan to add synchronization
+            between clients (i.e. macOS <-> Android) and this will cost
+            a small fee to cover servers and maintenance costs.`
         },
         {
           question: 'Does it work offline?',
@@ -58,10 +58,11 @@ export default {
         },
         {
           question: 'What is your roadmap?',
-          answer: `Fix editing imperfections (i.e. multiline selection),
-            release mobile apps, support all calendar formats
-            and languages, notes for tasks, hour-specific and repeatable entries.
-            We aim for <a href="https://twitter.com/_mac/status/819966993369595905">this design</a>.`
+          answer: `Multiline editing, release mobile, Chrome Web Store
+            and Mac App Store versions, support all calendar formats
+            and languages, notes for tasks, hour-specific and repeatable
+            entries. We aim for
+            <a href="https://twitter.com/_mac/status/819966993369595905">this design</a>.`
         },
         {
           question: 'Who are you?',
@@ -71,9 +72,8 @@ export default {
         {
           question: 'What is your tech stack?',
           answer: `<a href="https://vuejs.org/">Vue.js</a>,
-            <a href="http://electron.atom.io/">Electron</a>,
-            <a href="https://pouchdb.com/">PouchDB</a> and
-            <a href="http://couchdb.apache.org/">CouchDB</a>.`
+            <a href="http://electron.atom.io/">Electron</a> and
+            <a href="https://pouchdb.com/">PouchDB</a>`
         }
       ]
     }
