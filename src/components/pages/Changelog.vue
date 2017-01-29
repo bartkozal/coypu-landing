@@ -1,6 +1,7 @@
 <template>
   <div>
     <navbar title="Release notes"></navbar>
+    <clip-loader :loading="isLoading" :color="'#dddddd'"></clip-loader>
     <div v-for="release in releases">
       <div class="grid grid-bottom grid-pair">
         <div class="grid-item 1/2">
@@ -11,7 +12,7 @@
         <div class="grid-item 1/2 text-small text-muted">{{ release.date }}</div>
       </div>
       <hr class="margin-1/4-top margin-1/2-bottom">
-      <p v-html="release.body"></p>
+      <div v-html="release.summary"></div>
     </div>
     <footnote></footnote>
   </div>
@@ -20,46 +21,40 @@
 <script>
 import Navbar from '../navbar'
 import Footnote from '../footnote'
+import axios from 'axios'
+import marked from 'marked'
+import moment from 'moment'
+import ClipLoader from 'vue-spinner/src/ClipLoader'
 
 export default {
   name: 'changelog',
   components: {
     Navbar,
-    Footnote
+    Footnote,
+    ClipLoader
+  },
+  created () {
+    const feedUrl = "https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20atom%20where%20url%3D'https%3A%2F%2Fdownload.coypu.co%2Ffeed%2Fchannel%2Fall.atom'&format=json"
+    axios.get(feedUrl).then(response => {
+      this.feed = response.data.query.results.entry
+      this.isLoading = false
+    })
   },
   data () {
     return {
-      releases: [
-        {
-          version: 'v1.1.0',
-          date: 'Jan 20th, 2017',
-          body: `- Release <strong>Windows</strong> and <strong>Linux</strong> versions<br>
-          - Update app icon`
-        },
-        {
-          version: 'v1.0.2',
-          date: 'Jan 16th, 2017',
-          body: `- Fix rendering issues during very fast typing`
-        },
-        {
-          version: 'v1.0.1',
-          date: 'Jan 15th, 2017',
-          body: `- Make <code>Enter</code> and <code>Backspace</code>
-            keys sensitive to the caret position (so, it's possible to split
-            and join tasks)<br>
-          - Allow deselecting tasks with <code>Esc</code><br>
-          - Remember window position and size<br>
-          - All labels (week number, week range and day) are now clickable<br>
-          - Highlight current day<br>
-          - Improve performance<br>
-          - Adjust the icon size to match macOS guidelines`
-        },
-        {
-          version: 'v1.0.0',
-          date: 'Jan 10th, 2017',
-          body: 'Initial release'
+      feed: [],
+      isLoading: true
+    }
+  },
+  computed: {
+    releases () {
+      return this.feed.map(entry => {
+        return {
+          version: `v${entry.title.content}`,
+          date: moment(entry.updated).format('MMM Do, YYYY'),
+          summary: marked(entry.summary.content)
         }
-      ]
+      })
     }
   }
 }
