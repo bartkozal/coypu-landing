@@ -60,7 +60,7 @@ export default {
           question: 'What is your roadmap?',
           answer: `Multiline editing, release mobile, Chrome Web Store
             and Mac App Store versions, support all calendar formats
-            and languages, notes for tasks, hour-specific and repeatable
+            and languages, notes for tasks, hour-specific and recurring
             entries. We aim for
             <a href="https://twitter.com/_mac/status/819966993369595905">this design</a>.`
         },
