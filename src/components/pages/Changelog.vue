@@ -34,7 +34,7 @@ export default {
     ClipLoader
   },
   created () {
-    const feedUrl = "https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20atom%20where%20url%3D'https%3A%2F%2Fdownload.coypu.co%2Ffeed%2Fchannel%2Fall.atom'&format=json"
+    const feedUrl = "https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20atom%20where%20url%3D'https%3A%2F%2Fdownload.coypu.co%2Ffeed%2Fchannel%2Fall.atom'&format=json&_maxage=3600"
     axios.get(feedUrl).then(response => {
       this.feed = response.data.query.results.entry
       this.isLoading = false
