@@ -60,7 +60,7 @@ export default {
   name: 'home',
   data () {
     return {
-      currentVersion: '1.2.0'
+      currentVersion: '1.2.1'
     }
   },
   components: {
