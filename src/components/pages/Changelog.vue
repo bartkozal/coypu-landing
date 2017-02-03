@@ -3,17 +3,12 @@
     <navbar title="Release notes"></navbar>
     <clip-loader :loading="isLoading" :color="'#dddddd'"></clip-loader>
     <div v-for="release in releases">
-      <div class="grid grid-bottom grid-pair">
-        <div class="grid-item 1/2">
-          <a href="//download.coypu.co/download">
-            {{ release.version }}
-          </a>
-        </div>
-        <div class="grid-item 1/2 text-small text-muted">{{ release.date }}</div>
-      </div>
-      <hr class="margin-1/4-top margin-1/2-bottom">
+      <a href="//download.coypu.co/download">
+        {{ release.version }}
+      </a>
+      <date>{{ release.date }}</date>
+      <hr>
       <div v-html="release.summary"></div>
-    </div>
     <footnote></footnote>
   </div>
 </template>

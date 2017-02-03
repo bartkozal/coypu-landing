@@ -2,7 +2,7 @@
   <div>
     <navbar title="Frequently asked questions"></navbar>
     <div v-for="topic in faq">
-      <p class="margin-1/4-bottom text-bold">{{ topic.question }}</p>
+      <p>{{ topic.question }}</p>
       <p v-html="topic.answer"></p>
     </div>
     <footnote></footnote>
