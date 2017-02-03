@@ -58,9 +58,9 @@ export default {
         },
         {
           question: 'What is your roadmap?',
-          answer: `Multiline editing, release mobile, Chrome Web Store
-            and Mac App Store versions, notes for tasks, hour-specific and
-            recurring entries. We aim for
+          answer: `Multiline editing, notes for tasks, iOS, Android, Chrome
+            Web Store and Mac App Store versions, hour-specific and recurring
+            entries. We aim for
             <a href="https://twitter.com/_mac/status/819966993369595905">this design</a>.`
         },
         {

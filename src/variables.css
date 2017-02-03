@@ -1,0 +1,13 @@
+:root {
+  --spacing-unit: 1.3rem;
+  --z-index-body: 0;
+  --z-index-home: 1;
+  --font-stack: 'Clear Sans', sans-serif;
+  --font-ratio: 1.3333;
+  --font-base: 1em;
+  --font-leading: 1.45;
+  --color-primary: #ea7362;
+  --color-text: #111;
+  --color-muted: #4a4a4a;
+  --color-background: #e8e8e8;
+}
