@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="container">
+    <div class="home-container">
       <header>
         <img src="../../assets/logo.svg" alt="Coypu Logo">
         <div class="header-heading">
@@ -25,7 +25,7 @@
 
       <p class="text-small">
         Linux version (.deb) doesn't auto update.<br>
-        For 64-bit processors. See <router-link to="/changelog">release notes</router-link>.
+        For 64-bit processors. See <router-link to="/changelog" class="link-muted">release notes</router-link>.
       </p>
 
       <p class="text-lead">
@@ -35,9 +35,9 @@
       <p class="text-lead">
         Follow <a href="//twitter.com/_bkzl">@_bkzl</a> and <a href="//twitter.com/_mac">@_mac</a> for updates.
       </p>
-
-      <!--<video autoplay="autoplay" loop="loop" src="/demo.mp4" poster="/poster.png"></video>-->
     </div>
+
+    <!--<video autoplay="autoplay" loop="loop" src="/demo.mp4" poster="/poster.png"></video>-->
     <div class="body-surface"></div>
     <div class="body-macbook"></div>
   </div>
@@ -52,7 +52,7 @@ export default {
 <style scoped>
 @import '../../variables.css';
 
-.container {
+.home-container {
   position: relative;
   z-index: var(--z-index-home);
   width: 44vw;
@@ -74,7 +74,6 @@ header {
 .header-title {
   margin-bottom: 0;
   font-size: calc(1em * var(--font-ratio) * var(--font-ratio) * var(--font-ratio) * var(--font-ratio) * var(--font-ratio));
-  font-weight: normal;
   color: var(--color-primary);
 }
 
@@ -96,7 +95,7 @@ header {
   padding-left: calc(3 * var(--spacing-unit));
   margin-bottom: var(--spacing-unit);
   background-repeat: no-repeat;
-  background-position: var(--spacing-unit) 8px;
+  background-position: var(--spacing-unit) center;
 }
 
 .btn-mac {

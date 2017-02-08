@@ -1,14 +1,16 @@
 <template>
-  <div>
+  <div class="container">
     <navbar title="Release notes"></navbar>
-    <clip-loader :loading="isLoading" :color="'#dddddd'"></clip-loader>
-    <div v-for="release in releases">
-      <a href="//download.coypu.co/download">
-        {{ release.version }}
-      </a>
-      <date>{{ release.date }}</date>
-      <hr>
-      <div v-html="release.summary"></div>
+    <div class="wrapper">
+      <clip-loader :loading="isLoading" :color="'#4a4a4a'"></clip-loader>
+      <section v-for="release in releases">
+        <header class="section-header">
+          {{ release.version }}
+          <date>{{ release.date }}</date>
+        </header>
+        <div v-html="release.summary"></div>
+      </section>
+    </div>
     <footnote></footnote>
   </div>
 </template>
@@ -54,3 +56,15 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+@import '../../variables.css';
+
+.section-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-unit);
+  color: var(--color-muted);
+}
+</style>

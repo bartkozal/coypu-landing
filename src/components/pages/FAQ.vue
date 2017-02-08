@@ -1,9 +1,11 @@
 <template>
-  <div>
+  <div class="container">
     <navbar title="Frequently asked questions"></navbar>
-    <div v-for="topic in faq">
-      <p>{{ topic.question }}</p>
-      <p v-html="topic.answer"></p>
+    <div class="wrapper">
+      <div v-for="topic in faq">
+        <p class="faq-question">{{ topic.question }}</p>
+        <p v-html="topic.answer"></p>
+      </div>
     </div>
     <footnote></footnote>
   </div>
@@ -79,3 +81,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.faq-question {
+  font-weight: bold;
+}
+</style>
