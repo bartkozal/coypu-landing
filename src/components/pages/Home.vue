@@ -37,9 +37,10 @@
       </p>
     </div>
 
-    <!--<video autoplay="autoplay" loop="loop" src="/demo.mp4" poster="/poster.png"></video>-->
     <div class="body-surface"></div>
-    <div class="body-macbook"></div>
+    <div class="body-macbook">
+      <video autoplay="autoplay" loop="loop" src="/demo.mp4" poster="/poster.png"></video>
+    </div>
   </div>
 </template>
 
@@ -108,6 +109,16 @@ header {
 
 .btn-linux {
   background-image: url('../../assets/icon-linux.svg');
+}
+
+video {
+  position: absolute;
+  top: 100px;
+  right: 30%;
+  height: 68vh;
+  max-height: 570px;
+  border-radius: 6px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, .35);
 }
 
 .body-surface {
