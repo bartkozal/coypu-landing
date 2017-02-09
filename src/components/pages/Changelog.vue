@@ -8,7 +8,7 @@
       <section v-for="release in releases">
         <header class="section-header">
           {{ release.version }}
-          <date>{{ release.date }}</date>
+          <time>{{ release.date }}</time>
         </header>
         <div v-html="release.summary"></div>
       </section>
