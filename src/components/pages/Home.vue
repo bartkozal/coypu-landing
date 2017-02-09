@@ -1,8 +1,8 @@
 <template>
-  <div>
-    <div class="home-container">
+  <div class="wrapper">
+    <div class="container-home">
       <header>
-        <img src="../../assets/logo.svg" alt="Coypu Logo">
+        <img class="header-logo" src="../../assets/logo.svg" alt="Coypu Logo">
         <div class="header-heading">
           <h1 class="header-title">Coypu</h1>
           <p class="header-tagline">Text-editor-like weekly planner</p>
@@ -37,8 +37,8 @@
       </p>
     </div>
 
-    <div class="body-surface"></div>
-    <div class="body-macbook">
+    <div class="container-surface"></div>
+    <div class="container-video">
       <video autoplay="autoplay" loop="loop" src="/demo.mp4" poster="/poster.png"></video>
     </div>
   </div>
@@ -53,10 +53,30 @@ export default {
 <style scoped>
 @import '../../variables.css';
 
+@media (--breakpoint-tablet) {
+  .wrapper {
+    display: flex;
+    padding: var(--spacing-unit);
+  }
+}
+
+@media (--breakpoint-compact) {
+  .wrapper {
+    flex-direction: column;
+  }
+}
+
 header {
   display: flex;
-  justify-content: center;
+  margin-right: auto;
   margin-bottom: calc(3 * var(--spacing-unit));
+  margin-left: auto;
+}
+
+@media (--breakpoint-compact) {
+  header {
+    margin-bottom: calc(2 * var(--spacing-unit));
+  }
 }
 
 .header-heading {
@@ -64,10 +84,26 @@ header {
   text-align: left;
 }
 
+.header-logo {
+  max-width: 100%;
+}
+
+@media (--breakpoint-compact) {
+  .header-logo {
+    max-width: 40%;
+  }
+}
+
 .header-title {
   margin-bottom: 0;
   font-size: calc(1em * var(--font-ratio) * var(--font-ratio) * var(--font-ratio) * var(--font-ratio) * var(--font-ratio));
   color: var(--color-primary);
+}
+
+@media (--breakpoint-compact) {
+  .header-title {
+    font-size: calc(1em * var(--font-ratio) * var(--font-ratio) * var(--font-ratio) * var(--font-ratio));
+  }
 }
 
 .header-tagline {
@@ -82,6 +118,13 @@ header {
   align-content: center;
   width: 360px;
   margin: 0 auto;
+}
+
+@media (--breakpoint-compact) {
+  .list-versions {
+    width: 100%;
+    max-width: 360px;
+  }
 }
 
 .btn {
@@ -103,17 +146,7 @@ header {
   background-image: url('../../assets/icon-linux.svg');
 }
 
-video {
-  position: absolute;
-  top: 100px;
-  right: 30%;
-  height: 68vh;
-  max-height: 570px;
-  border-radius: 6px;
-  box-shadow: 0 0 12px rgba(0, 0, 0, .35);
-}
-
-.home-container {
+.container-home {
   position: relative;
   z-index: var(--z-index-home);
   display: flex;
@@ -124,7 +157,22 @@ video {
   text-align: center;
 }
 
-.body-surface {
+@media (--breakpoint-tablet) {
+  .container-home {
+    width: 50%;
+    height: calc(100vh - var(--spacing-unit) * 2);
+  }
+}
+
+@media (--breakpoint-compact) {
+  .container-home {
+    width: 100%;
+    height: auto;
+    margin-bottom: var(--spacing-unit);
+  }
+}
+
+.container-surface {
   position: fixed;
   bottom: 0;
   z-index: var(--z-index-body);
@@ -133,7 +181,39 @@ video {
   background-image: linear-gradient(180deg, #e0dfdf, #f0f0f0);
 }
 
-.body-macbook {
+@media (--breakpoint-tablet) {
+  .container-surface {
+    display: none;
+  }
+}
+
+video {
+  position: absolute;
+  top: 105px;
+  right: 30%;
+  height: 68vh;
+  max-height: 560px;
+  border-radius: 6px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, .35);
+}
+
+@media (--breakpoint-tablet) {
+  video {
+    position: static;
+    top: auto;
+    right: auto;
+    height: auto;
+    max-height: 90vh;
+  }
+}
+
+@media (--breakpoint-compact) {
+  video {
+    max-width: 100%;
+  }
+}
+
+.container-video {
   position: fixed;
   right: 0;
   bottom: 1vh;
@@ -146,5 +226,28 @@ video {
   background-repeat: no-repeat;
   background-position: left top;
   background-size: cover;
+}
+
+@media (--breakpoint-tablet) {
+  .container-video {
+    position: static;
+    right: auto;
+    bottom: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    max-width: none;
+    height: calc(100vh - var(--spacing-unit) * 2);
+    max-height: none;
+    background-image: none;
+  }
+}
+
+@media (--breakpoint-compact) {
+  .container-video {
+    width: 100%;
+    height: auto;
+  }
 }
 </style>

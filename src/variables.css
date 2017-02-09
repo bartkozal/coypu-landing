@@ -1,3 +1,6 @@
+@custom-media --breakpoint-tablet (max-width: 1150px);
+@custom-media --breakpoint-compact (max-width: 820px);
+
 :root {
   --spacing-unit: 1.3rem;
   --z-index-body: 0;

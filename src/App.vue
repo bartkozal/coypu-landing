@@ -31,11 +31,17 @@ h2 {
 }
 
 .has-container {
-  padding: var(--spacing-unit) calc(var(--spacing-unit) * 1.5);
+  padding: var(--spacing-unit);
 }
 
 .container {
   width: 60vw;
+}
+
+@media (--breakpoint-tablet) {
+  .container {
+    width: auto;
+  }
 }
 
 .btn {
@@ -46,6 +52,12 @@ h2 {
   background-color: var(--color-primary);
   border-radius: 8px;
   box-shadow: 0 3px color(var(--color-primary) l(-20%));
+}
+
+@media (--breakpoint-compact) {
+  .btn {
+    font-size: var(--font-base);
+  }
 }
 
 .text-small {

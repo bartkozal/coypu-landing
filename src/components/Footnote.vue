@@ -30,6 +30,12 @@ nav {
   margin-left: auto;
 }
 
+@media (--breakpoint-compact) {
+  nav {
+    flex-direction: column;
+  }
+}
+
 a {
   color: var(--color-muted);
   border-bottom: 1px solid color(var(--color-muted) l(+20%));
