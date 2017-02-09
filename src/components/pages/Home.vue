@@ -53,17 +53,9 @@ export default {
 <style scoped>
 @import '../../variables.css';
 
-.home-container {
-  position: relative;
-  z-index: var(--z-index-home);
-  width: 44vw;
-  text-align: center;
-}
-
 header {
   display: flex;
   justify-content: center;
-  margin-top: calc(2 * var(--spacing-unit));
   margin-bottom: calc(3 * var(--spacing-unit));
 }
 
@@ -119,6 +111,17 @@ video {
   max-height: 570px;
   border-radius: 6px;
   box-shadow: 0 0 12px rgba(0, 0, 0, .35);
+}
+
+.home-container {
+  position: relative;
+  z-index: var(--z-index-home);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: calc(100vw - 728px);
+  height: 88vh;
+  text-align: center;
 }
 
 .body-surface {
