@@ -13,6 +13,10 @@ export default {
 <style>
 @import './variables.css';
 
+html {
+  overflow-y: visible;
+}
+
 body {
   font-family: var(--font-stack);
   font-size: var(--font-base);
