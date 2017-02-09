@@ -33,6 +33,7 @@ nav {
 @media (--breakpoint-compact) {
   nav {
     flex-direction: column;
+    max-width: none;
   }
 }
 
