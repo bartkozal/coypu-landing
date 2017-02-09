@@ -1,7 +1,7 @@
 <template>
-  <div class="container">
+  <div class="has-container">
     <navbar title="Frequently asked questions"></navbar>
-    <div class="wrapper">
+    <div class="container">
       <div v-for="topic in faq">
         <p class="faq-question">{{ topic.question }}</p>
         <p v-html="topic.answer"></p>

@@ -1,8 +1,10 @@
 <template>
-  <div class="container">
+  <div class="has-container">
     <navbar title="Release notes"></navbar>
-    <div class="wrapper">
+    <div class="has-clip-loader">
       <clip-loader :loading="isLoading" :color="'#4a4a4a'"></clip-loader>
+    </div>
+    <div class="container">
       <section v-for="release in releases">
         <header class="section-header">
           {{ release.version }}
@@ -66,5 +68,9 @@ export default {
   justify-content: space-between;
   margin-bottom: var(--spacing-unit);
   color: var(--color-muted);
+}
+
+.has-clip-loader {
+  margin-bottom: var(--spacing-unit);
 }
 </style>

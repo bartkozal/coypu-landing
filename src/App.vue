@@ -14,8 +14,6 @@ export default {
 @import './variables.css';
 
 body {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
   font-family: var(--font-stack);
   font-size: var(--font-base);
   color: var(--color-text);
@@ -32,11 +30,11 @@ h2 {
   font-weight: normal;
 }
 
-.container {
+.has-container {
   padding: var(--spacing-unit) calc(var(--spacing-unit) * 1.5);
 }
 
-.wrapper {
+.container {
   width: 60vw;
 }
 
