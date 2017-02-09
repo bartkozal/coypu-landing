@@ -38,8 +38,10 @@
     </div>
 
     <div class="container-surface"></div>
-    <div class="container-video">
-      <video autoplay="autoplay" loop="loop" src="/demo.mp4" poster="/poster.png"></video>
+    <div class="container-demo">
+      <div class="has-video">
+        <video autoplay="autoplay" loop="loop" src="/demo.mp4" poster="/poster.png"></video>
+      </div>
     </div>
   </div>
 </template>
@@ -188,18 +190,16 @@ header {
   }
 }
 
-video {
+.has-video {
   position: absolute;
   top: 105px;
   right: 30%;
   height: 68vh;
   max-height: 560px;
-  border-radius: 6px;
-  box-shadow: 0 0 12px rgba(0, 0, 0, .35);
 }
 
 @media (--breakpoint-tablet) {
-  video {
+  .has-video {
     position: static;
     top: auto;
     right: auto;
@@ -209,12 +209,19 @@ video {
 }
 
 @media (--breakpoint-compact) {
-  video {
+  .has-video {
     max-width: 100%;
   }
 }
 
-.container-video {
+video {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 6px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, .35);
+}
+
+.container-demo {
   position: fixed;
   right: 0;
   bottom: 1vh;
@@ -230,7 +237,7 @@ video {
 }
 
 @media (--breakpoint-tablet) {
-  .container-video {
+  .container-demo {
     position: static;
     right: auto;
     bottom: auto;
@@ -246,7 +253,7 @@ video {
 }
 
 @media (--breakpoint-compact) {
-  .container-video {
+  .container-demo {
     width: 100%;
     height: auto;
   }
