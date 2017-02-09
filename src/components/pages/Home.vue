@@ -68,6 +68,7 @@ export default {
 
 header {
   display: flex;
+  justify-content: center;
   margin-right: auto;
   margin-bottom: calc(3 * var(--spacing-unit));
   margin-left: auto;
