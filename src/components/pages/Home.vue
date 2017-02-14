@@ -10,15 +10,15 @@
       </header>
 
       <div class="list-versions">
-        <a href="//download.coypu.co/download/mac" class="btn btn-mac">
+        <a href="//download.coypu.co/download/mac" class="btn btn-mac" @click="trackDownload('mac')">
           Download for macOS
         </a>
 
-        <a href="//download.coypu.co/download/win" class="btn btn-win">
+        <a href="//download.coypu.co/download/win" class="btn btn-win" @click="trackDownload('windows')">
           Download for Windows
         </a>
 
-        <a href="//download.coypu.co/download/linux_deb" class="btn btn-linux">
+        <a href="//download.coypu.co/download/linux_deb" class="btn btn-linux" @click="trackDownload('linux')">
           Download for Linux
         </a>
       </div>
@@ -48,7 +48,17 @@
 
 <script>
 export default {
-  name: 'home'
+  name: 'home',
+  methods: {
+    trackDownload (platform) {
+      window.ga('send', 'event', {
+        eventCategory: 'Download',
+        eventAction: 'click',
+        eventLabel: platform,
+        transport: 'beacon'
+      })
+    }
+  }
 }
 </script>
 
