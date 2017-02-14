@@ -12,6 +12,8 @@ const router = new VueRouter({
   ]
 })
 
-ga(router, 'UA-51355575-8')
+if (process.env.NODE_ENV === 'production') {
+  ga(router, 'UA-51355575-8')
+}
 
 export default router
