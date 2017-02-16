@@ -33,25 +33,25 @@ export default {
     ClipLoader
   },
   created () {
-    const feedUrl = "https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20atom%20where%20url%3D'https%3A%2F%2Fdownload.coypu.co%2Ffeed%2Fchannel%2Fall.atom'&format=json&_maxage=3600"
+    const feedUrl = 'https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fdownload.coypu.co%2Ffeed%2Fchannel%2Fall.atom'
     axios.get(feedUrl).then(response => {
-      this.feed = response.data.query.results.entry
+      this.items = response.data.items
       this.isLoading = false
     })
   },
   data () {
     return {
-      feed: [],
+      items: [],
       isLoading: true
     }
   },
   computed: {
     releases () {
-      return this.feed.map(entry => {
+      return this.items.map(item => {
         return {
-          version: `v${entry.title.content}`,
-          date: moment(entry.updated).format('MMM Do, YYYY'),
-          summary: marked(entry.summary.content)
+          version: `v${item.title}`,
+          date: moment(item.pubDate).format('MMM Do, YYYY'),
+          summary: marked(item.content)
         }
       })
     }
