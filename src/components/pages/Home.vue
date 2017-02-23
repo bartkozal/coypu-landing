@@ -29,7 +29,7 @@
       </p>
 
       <p class="text-lead">
-        Read our <router-link to="/faq">FAQ</router-link> to learn more.
+        Read our <router-link to="/faq">FAQ</router-link> and <a href="https://medium.com/lost-bananas/coypu-case-study-143968f9a441">Case Study</a> to learn more.
       </p>
 
       <p class="text-lead">
