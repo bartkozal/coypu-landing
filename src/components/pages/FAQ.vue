@@ -60,8 +60,8 @@ export default {
         },
         {
           question: 'What is your roadmap?',
-          answer: `Multiline copy-and-paste, mobile (iOS, Android), Chrome Web Store and
-            Mac App Store versions, hour-specific and recurring entries.
+          answer: `Multiline copy-and-paste, web, mobile (iOS, Android), Chrome Web Store and
+            Mac App Store releases, hour-specific and recurring entries.
             We aim for <a href="https://medium.com/lost-bananas/coypu-case-study-143968f9a441">this design</a>.`
         },
         {
