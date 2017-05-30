@@ -4,7 +4,7 @@
     <router-link to="/changelog">Release notes</router-link>
     <router-link to="/faq">FAQ</router-link>
     <a href="//lostbananas.com">
-      &copy; {{ currentYear }} Bartłomiej Kozal &amp; Maciej Kozal
+      &copy; {{ currentYear }} Bart Kozal &amp; Maciej Kozal
     </a>
   </nav>
 </template>
