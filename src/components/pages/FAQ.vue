@@ -55,19 +55,13 @@ export default {
           question: 'How can I request a feature or report a bug?',
           answer: `The easiest way is to ask us on Twitter
             (<a href="https://twitter.com/@_bkzl">@_bkzl</a> or
-            <a href="https://twitter.com/@_mac">@_mac</a>).
-            You can also <a href="mailto:hello@lostbananas.com">send us an email</a>.`
+            <a href="https://twitter.com/@_mac">@_mac</a>).`
         },
         {
           question: 'What is your roadmap?',
           answer: `Multiline copy-and-paste, web, mobile (iOS, Android), Chrome Web Store and
             Mac App Store releases, hour-specific and recurring entries.
             We aim for <a href="https://medium.com/lost-bananas/coypu-case-study-143968f9a441">this design</a>.`
-        },
-        {
-          question: 'Who are you?',
-          answer: `We are brothers who like to
-            <a href="//lostbananas.com">build software</a>.`
         },
         {
           question: 'What is your tech stack?',

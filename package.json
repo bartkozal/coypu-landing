@@ -2,7 +2,7 @@
   "name": "coypu-landing",
   "version": "1.0.0",
   "description": "Coypu landing page",
-  "author": "Lost Bananas <hello@lostbananas.com>",
+  "author": "Bart Kozal <bkzl@me.com>",
   "private": true,
   "scripts": {
     "start": "npm run dev",

@@ -3,9 +3,7 @@
     <router-link to="/">Home</router-link>
     <router-link to="/changelog">Release notes</router-link>
     <router-link to="/faq">FAQ</router-link>
-    <a href="//lostbananas.com">
-      &copy; {{ currentYear }} Bart Kozal &amp; Maciej Kozal
-    </a>
+    &copy; {{ currentYear }} Bart Kozal &amp; Maciej Kozal
   </nav>
 </template>
 
@@ -28,6 +26,7 @@ nav {
   justify-content: space-between;
   max-width: 550px;
   margin-left: auto;
+  color: var(--color-muted);
 }
 
 @media (--breakpoint-compact) {
