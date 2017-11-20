@@ -14,3 +14,7 @@ npm run dev
 # deploy to production
 npm run deploy
 ```
+
+* * *
+
+Please create any new issues in [the main Coypu repository](https://github.com/bkzl/coypu/issues)

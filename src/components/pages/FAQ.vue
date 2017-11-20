@@ -39,23 +39,16 @@ export default {
         },
         {
           question: 'Is it free?',
-          answer: `Yes it is. In the future, we plan to add synchronization
-            between clients (i.e. macOS <-> Android) and this will cost
-            a small fee to cover servers and maintenance costs.`
+          answer: `Yes it is. It's free and <a href="https://github.com/bkzl/coypu">open-sourced</a>.`
         },
         {
           question: 'Does it work offline?',
           answer: `Yes it does.`
         },
         {
-          question: 'Do you plan to release mobile apps?',
-          answer: `Yes. We will release both iOS and Android versions.`
-        },
-        {
           question: 'How can I request a feature or report a bug?',
-          answer: `The easiest way is to ask us on Twitter
-            (<a href="https://twitter.com/@_bkzl">@_bkzl</a> or
-            <a href="https://twitter.com/@_mac">@_mac</a>).`
+          answer: `The easiest way is to
+            <a href="https://github.com/bkzl/coypu/issues">create an issue on GitHub</a>.`
         },
         {
           question: 'What is your roadmap?',
