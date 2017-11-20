@@ -3,7 +3,6 @@
     <router-link to="/">Home</router-link>
     <router-link to="/changelog">Release notes</router-link>
     <router-link to="/faq">FAQ</router-link>
-    &copy; {{ currentYear }} Bart Kozal &amp; Maciej Kozal
   </nav>
 </template>
 
@@ -24,7 +23,7 @@ export default {
 nav {
   display: flex;
   justify-content: space-between;
-  max-width: 550px;
+  max-width: 240px;
   margin-left: auto;
   color: var(--color-muted);
 }
