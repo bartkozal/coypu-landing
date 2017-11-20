@@ -1,5 +1,6 @@
 <template>
   <header>
+    <github-corner></github-corner>
     <h2>{{ title }}</h2>
     <router-link to="/" class="text-lead link-muted">
       Back to the homepage
@@ -8,8 +9,13 @@
 </template>
 
 <script>
+import GitHubCorner from './GitHubCorner'
+
 export default {
   name: 'navbar',
+  components: {
+    'github-corner': GitHubCorner
+  },
   props: {
     title: {
       required: true

@@ -1,5 +1,6 @@
 <template>
   <div class="wrapper">
+    <github-corner></github-corner>
     <div class="container-home">
       <header>
         <img class="header-logo" src="../../assets/logo.svg" alt="Coypu Logo">
@@ -47,8 +48,13 @@
 </template>
 
 <script>
+import GitHubCorner from '../GitHubCorner'
+
 export default {
   name: 'home',
+  components: {
+    'github-corner': GitHubCorner
+  },
   methods: {
     trackDownload (platform) {
       window.ga('send', 'event', {
