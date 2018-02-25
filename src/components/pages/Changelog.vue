@@ -18,8 +18,8 @@
 </template>
 
 <script>
-import Navbar from '../navbar'
-import Footnote from '../footnote'
+import Navbar from '../Navbar'
+import Footnote from '../Footnote'
 import axios from 'axios'
 import marked from 'marked'
 import moment from 'moment'

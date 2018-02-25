@@ -12,8 +12,8 @@
 </template>
 
 <script>
-import Navbar from '../navbar'
-import Footnote from '../footnote'
+import Navbar from '../Navbar'
+import Footnote from '../Footnote'
 
 export default {
   name: 'faq',
