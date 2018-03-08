@@ -4,17 +4,14 @@
 
 ## Build Setup
 
-``` bash
+```sh
 # install dependencies
-npm install
+yarn install
 
 # serve with hot reload at localhost:8080
-npm run dev
-
-# deploy to production
-npm run deploy
+yarn dev
 ```
 
-* * *
+---
 
 Please create any new issues in [the main Coypu repository](https://github.com/bkzl/coypu/issues)
