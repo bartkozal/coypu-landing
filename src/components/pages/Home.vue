@@ -11,15 +11,15 @@
       </header>
 
       <div class="list-versions">
-        <a href="//download.coypu.co/download/mac" class="btn btn-mac" @click="trackDownload('mac')">
+        <a href="https://github.com/bkzl/coypu/releases/download/v1.3.0/coypu-1.3.0.dmg" class="btn btn-mac" @click="trackDownload('mac')">
           Download for macOS
         </a>
 
-        <a href="//download.coypu.co/download/win" class="btn btn-win" @click="trackDownload('windows')">
+        <a href="https://github.com/bkzl/coypu/releases/download/v1.3.0/coypu_setup.exe" class="btn btn-win" @click="trackDownload('windows')">
           Download for Windows
         </a>
 
-        <a href="//download.coypu.co/download/linux_deb" class="btn btn-linux" @click="trackDownload('linux')">
+        <a href="https://github.com/bkzl/coypu/releases/download/v1.3.0/coypu-1.3.0-linux.deb" class="btn btn-linux" @click="trackDownload('linux')">
           Download for Linux
         </a>
       </div>
