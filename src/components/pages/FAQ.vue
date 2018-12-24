@@ -46,17 +46,6 @@ export default {
           answer: `Yes it does.`
         },
         {
-          question: 'How can I request a feature or report a bug?',
-          answer: `The easiest way is to
-            <a href="https://github.com/bkzl/coypu/issues">create an issue on GitHub</a>.`
-        },
-        {
-          question: 'What is your roadmap?',
-          answer: `Multiline copy-and-paste, web, mobile (iOS, Android), Chrome Web Store and
-            Mac App Store releases, hour-specific and recurring entries.
-            We aim for <a href="https://medium.com/lost-bananas/coypu-case-study-143968f9a441">this design</a>.`
-        },
-        {
           question: 'What is your tech stack?',
           answer: `<a href="https://vuejs.org/">Vue.js</a>,
             <a href="http://electron.atom.io/">Electron</a> and
