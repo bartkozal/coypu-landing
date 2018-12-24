@@ -26,7 +26,7 @@
 
       <p class="text-small">
         Linux version (.deb) doesn't auto update.<br>
-        For 64-bit processors. See <router-link to="/changelog" class="link-muted">release notes</router-link>.
+        For 64-bit processors. See <a href="https://github.com/bkzl/coypu/releases">release notes</a>.
       </p>
 
       <p class="text-lead">
