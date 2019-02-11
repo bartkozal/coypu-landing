@@ -34,7 +34,7 @@
       </p>
 
       <p class="text-lead">
-        Follow <a href="//twitter.com/_bkzl">@_bkzl</a> and <a href="//twitter.com/_mac">@_mac</a> for updates.
+        Follow <a href="//twitter.com/brtjkzl">@brtjkzl</a> and <a href="//twitter.com/_mac">@_mac</a> for updates.
       </p>
     </div>
 
